@@ -5,7 +5,7 @@
   <style>
   header
 {
-    background-color:#5191FD;
+    background-color:#ECF3F3;
 }
 </style>
   <meta charset="UTF-8">
@@ -36,7 +36,7 @@
         </li>
       </ul> -->
       <nav class="navbar navbar-expand-lg navbar-light bg-light">
-  <a class="navbar-brand" href="#">Menu</a>
+  <a class="navbar-brand" href="weatherwebsiteHWindex.html">Menu</a>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
   </button>
@@ -44,30 +44,35 @@
   <div class="collapse navbar-collapse" id="navbarSupportedContent">
     <ul class="navbar-nav mr-auto">
       <li class="nav-item active">
-        <a class="nav-link" href="#">Home<span class="sr-only">(current)</span></a>
+        <a class="nav-link" href="weatherwebsiteHWindex.html">Home<span class="sr-only">(current)</span></a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="#">Comparison</a>
+        <a class="nav-link" href="Comparisons.html">Comparison</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="#">Data Gallery</a>
+        <a class="nav-link" href="DataGallery.html">Data Gallery</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="Aboutus.html">About Us</a>
       </li>
       <li class="nav-item dropdown">
         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
           Plots
         </a>
         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-          <a class="dropdown-item" href="#">Main Menu</a>
+          <a class="dropdown-item" href="weatherwebsiteHWindex.html">Main Menu</a>
           <div class="dropdown-divider"></div>
-          <a class="dropdown-item" href="#">Temperature</a>
+          <a class="dropdown-item" href="Temperature.html">Temperature</a>
           <div class="dropdown-divider"></div>
-          <a class="dropdown-item" href="#">Cloudiness</a>
+          <a class="dropdown-item" href="Cloudiness.html">Cloudiness</a>
           <div class="dropdown-divider"></div>
-          <a class="dropdown-item" href="#">Wind Speed</a>
+          <a class="dropdown-item" href="WindSpeed.html">Wind Speed</a>
           <div class="dropdown-divider"></div>
-          <a class="dropdown-item" href="#">Data Gallery</a>
+          <a class="dropdown-item" href="DataGallery.html">Data Gallery</a>
           <div class="dropdown-divider"></div>
-          <a class="dropdown-item" href="#">Comparison</a>
+          <a class="dropdown-item" href="Comparisons.html">Comparisons</a>
+          <div class="dropdown-divider"></div>
+          <a class="dropdown-item" href="Aboutus.html">About Us</a>
         </div>
       <!-- </li>
       <li class="nav-item">
@@ -100,7 +105,7 @@
     <main>
       <section class="posts">
         <article class="post">
-          <h3>Summary: Maximum Temperature</h3>
+          <h3>Summary: Humidity</h3>
           <p>
           </p>
         </article>
@@ -113,15 +118,18 @@
           <!-- <h3>Ut nulla exercitation ad eu et amet nisi dolor.</h3> -->
           <p>
           </P>
-        <!-- </article>
-        <article class="post">
-          <h3>Ut nulla exercitation ad eu et amet nisi dolor.</h3>
-          <p>Nisi quis consectetur excepteur cillum dolor minim. Reprehenderit do qui veniam dolor in ea cupidatat eiusmod ad adipisicing nulla officia dolor sit. Anim fugiat eu enim in ex est deserunt laborum commodo incididunt consectetur consectetur.
-            Ullamco nulla nulla cillum elit reprehenderit officia magna excepteur. Fugiat occaecat veniam eu amet veniam tempor fugiat magna exercitation amet veniam mollit pariatur. Minim adipisicing cupidatat est do est id ex reprehenderit quis enim
-            elit consectetur sint.
-          </p>
+          <section id="figure">
+          <img style = "margin-left: 25%;">
+        </section>
         </article>
         <article class="post">
+          <h3>Humidity Index Across Latitudes</h3>
+          <p>
+            <img id="bio-image" src="https://github.com/tdimare/WeatherpyHW/blob/master/Humidity_v_Latitude.png?raw=true" class="col-sm-12 col-md-6" style="width: 40%; float: left">
+            From the graph on this page you can see that a significant portion of the humidit lies around 100%. The second takeaway that we can see from this graph is that a significant portion of the cities within this graph are concentrated around the 0 degrees in lattitude which if you think about it is not that unusual. At the equator you are constantly hit with sun rays directly. Unlike the poles (North & South) which constantly rotate the equator is almost always hit by the sun, this causes a higher amount of water evaporation which is picked up by the prevailing winds in the tropics which creates a more humid environment.
+          </p>
+        </article>
+        <!-- <article class="post">
           <h3>Ut nulla exercitation ad eu et amet nisi dolor.</h3>
           <p>Nisi quis consectetur excepteur cillum dolor minim. Reprehenderit do qui veniam dolor in ea cupidatat eiusmod ad adipisicing nulla officia dolor sit. Anim fugiat eu enim in ex est deserunt laborum commodo incididunt consectetur consectetur.
             Ullamco nulla nulla cillum elit reprehenderit officia magna excepteur. Fugiat occaecat veniam eu amet veniam tempor fugiat magna exercitation amet veniam mollit pariatur. Minim adipisicing cupidatat est do est id ex reprehenderit quis enim
@@ -138,7 +146,22 @@
       </section>
     </main>
   </div>
-
 </body>
-
+<div class="content" style = "text-align: center;">
+        <form class="contactForm" action="#" method="post" >
+            <table style = "margin-left: 35%;">
+                <tr><td>Contact</td></tr>
+                <tr><td>Name:</td><td><input type="text" name="name"></td></tr>
+                <tr><td>E-mail:</td><td><input type="text" name="email"><td></tr>
+                <tr><td>Message:</td><td><input type="textarea" name="message"></td></tr>
+                <tr><td><input type="submit" name="submit"></td></tr>
+            </table>
+<footer>
+  <p>Created by: Tom DiMare</p>
+  <p><a href="Aboutus.html"> About us</a></p>
+  <p>Contact information: <a href="tdimare16@gmail.com"> tdimare16@gmail.com</a></p>
+</footer>
+        </form>
+    </div>
+    <div class="footer">
 </html>
